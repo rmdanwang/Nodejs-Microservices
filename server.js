@@ -8,7 +8,12 @@ const HOST = '0.0.0.0';
 
 app.get('/', (req, res) => 
 {
-  res.send('Docker and Nodejs');
+  res.send('{Status: Got new Data}');
+});
+
+app.post('/', (req, res) => 
+{
+  res.send('{Status: Posted new data}');
 });
 
 app.listen(PORT, HOST);
